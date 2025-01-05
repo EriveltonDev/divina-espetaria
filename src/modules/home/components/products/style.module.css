@@ -20,3 +20,27 @@
     gap: 30px;
   }
 }
+
+@media(width <= 1010px) {
+  .products {
+    .products__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media(width <= 760px) {
+  .products {
+    .products__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media(width <= 530px) {
+  .products {
+    .products__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
