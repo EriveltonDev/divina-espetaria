@@ -10,6 +10,7 @@ export function Header() {
   const [mobileIsOpen, setMobileIsOpen] = useState(false)
   const isMobile = useMedia('(max-width: 1042px)')
   const menuMobileRef = useRef<HTMLUListElement | null>(null)
+  const headerRef = useRef<HTMLElement | null>(null)
 
   useEffect(() => {
     if(!isMobile) {
@@ -20,7 +21,13 @@ export function Header() {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (mobileIsOpen && menuMobileRef.current && !menuMobileRef.current.contains(event.target as Node)) {
+      if (
+        mobileIsOpen
+        && menuMobileRef.current
+        && !menuMobileRef.current.contains(event.target as Node)
+        && headerRef.current
+        && !headerRef.current.contains(event.target as Node)
+      ) {
         setMobileIsOpen(false);
       }
     };
@@ -32,7 +39,7 @@ export function Header() {
   }, [mobileIsOpen]);
 
   return (
-    <header className={styles.header}>
+    <header ref={headerRef} className={styles.header}>
       <Link href="/">
         <Image
           src="/images/logo.png"
