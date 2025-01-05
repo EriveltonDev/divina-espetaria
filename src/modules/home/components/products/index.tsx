@@ -1,3 +1,4 @@
+import { Button } from '@/shared/components/button'
 import { ProductItem } from './components/item'
 import styles from './style.module.css'
 
@@ -22,6 +23,10 @@ export function Products() {
         <ProductItem />
         <ProductItem />
       </div>
+
+      <Button>
+        Cardápio Completo
+      </Button>
     </main>
   )
 }

@@ -1,0 +1,49 @@
+.numbers {
+  background-color: black;
+  color: white;
+  padding: 80px 30px;
+  border-top: 1px solid #de822f;
+
+  .numbers__mini_title {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #de822f;
+  }
+
+  .numbers__title {
+    font-size: 2.5rem;
+  }
+
+  .numbers__details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    text-align: center;
+    padding: 60px 0;
+    gap: 50px;
+
+    .numbers__details__item {
+      .numbers__details__item__title {
+        color: #de822f;
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+@media (width <= 760px) {
+  .numbers {
+    .numbers__details {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (width <= 530px) {
+  .numbers {
+    .numbers__details {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
