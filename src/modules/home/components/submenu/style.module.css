@@ -1,0 +1,51 @@
+.submenu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 0;
+    background-color: black;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:hover {
+      color: #de822f;
+      text-decoration: underline;
+    }
+
+    svg {
+      color: #de822f;
+    }
+  }
+}
+
+@media(width <= 1041px) {
+  .submenu {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(width <= 675px) {
+  .submenu {
+    a {
+      font-size: 1.5rem;
+      padding: 20px 0;
+    }
+  }
+}
+
+@media(width <= 500px) {
+  .submenu {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

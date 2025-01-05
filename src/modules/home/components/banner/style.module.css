@@ -1,0 +1,60 @@
+.banner {
+  position: relative;
+  width: 100%;
+  color: white;
+  background-image: url('/images/banner.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+  }
+
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 2;
+
+    p {
+      font-weight: bold;
+    }
+
+    svg {
+      color: #de822f;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media(width <= 675px) {
+  .banner {
+    padding: 60px 30px;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
