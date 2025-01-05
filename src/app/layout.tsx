@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: 'https://divina-espetaria.vercel.app/images/open-graph.png',
+        url: 'https://divina-espetaria.vercel.app/images/open-graph.webp',
         width: 800,
         height: 600,
       }
