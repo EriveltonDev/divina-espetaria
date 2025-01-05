@@ -17,6 +17,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Divina Espetaria",
   description: "Divina Espetaria",
+  openGraph: {
+    images: [
+      {
+        url: 'https://divina-espetaria.vercel.app/public/open-graph.png',
+        width: 800,
+        height: 600,
+      }
+    ]
+  }
 };
 
 export default function RootLayout({
