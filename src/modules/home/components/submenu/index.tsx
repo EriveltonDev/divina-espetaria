@@ -7,23 +7,23 @@ import styles from './style.module.css'
 export function SubMenu() {
   return (
     <section className={styles.submenu}>
-      <Link href="">
-        <FaMoneyBill1 />
+      <Link className={styles.submenu__link} href="">
+        <FaMoneyBill1 className={styles.submenu__icon} />
         <p>Ofertas</p>
       </Link>
 
-      <Link href="">
-        <GiBarbecue />
+      <Link className={styles.submenu__link} href="">
+        <GiBarbecue className={styles.submenu__icon} />
         <p>Kit Churrasco</p>
       </Link>
 
-      <Link href="">
-        <BiSolidFoodMenu />
+      <Link className={styles.submenu__link} href="">
+        <BiSolidFoodMenu className={styles.submenu__icon} />
         <p>Cardápio</p>
       </Link>
 
-      <Link href="">
-        <FaMotorcycle />
+      <Link className={styles.submenu__link} href="">
+        <FaMotorcycle className={styles.submenu__icon} />
         <p>Entrega</p>
       </Link>
     </section>

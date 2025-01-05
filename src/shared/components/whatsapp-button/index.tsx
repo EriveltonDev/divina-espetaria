@@ -9,7 +9,7 @@ export function WhatsappButton() {
       referrerPolicy="no-referrer"
       className={styles.whatsapp}
     >
-      <FaWhatsapp />
+      <FaWhatsapp className={styles.whatsapp__icon}/>
       <p>Faça seu pedido</p>
     </a>
   )

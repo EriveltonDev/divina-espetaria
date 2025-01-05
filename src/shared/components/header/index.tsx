@@ -34,51 +34,51 @@ export function Header() {
           <span className={styles.bar}></span>
         </div>
 
-        <ul className={mobileIsOpen ? styles.active : undefined}>
-          <li>
-            <Link href="">
+        <ul className={`${styles.ul} ${mobileIsOpen ? styles.active : undefined}`}>
+          <li className={styles.li}>
+            <Link className={styles.nav__link} href="">
               Lojas
             </Link>
           </li>
 
-          <li>
-            <Link href="">
+          <li className={styles.li}>
+            <Link className={styles.nav__link} href="">
               Preços
             </Link>
           </li>
 
-          <li>
-            <Link href="">
+          <li className={styles.li}>
+            <Link className={styles.nav__link} href="">
               Ofertas
             </Link>
           </li>
 
-          <li>
-            <Link href="">
+          <li className={styles.li}>
+            <Link className={styles.nav__link} href="">
               Kit Churrasco
             </Link>
           </li>
 
-          <li>
-            <Link href="">
+          <li className={styles.li}>
+            <Link className={styles.nav__link} href="">
               Churrasqueiras
             </Link>
           </li>
 
-          <li>
-            <Link href="">
+          <li className={styles.li}>
+            <Link className={styles.nav__link} href="">
               Revenda
             </Link>
           </li>
 
-          <li>
-            <Link href="">
+          <li className={styles.li}>
+            <Link className={styles.nav__link} href="">
               Artigos
             </Link>
           </li>
 
-          <li>
-            <Link href="">
+          <li className={styles.li}>
+            <Link className={styles.nav__link} href="">
               Distribuidora
             </Link>
           </li>

@@ -4,11 +4,11 @@ import styles from './style.module.css'
 export function Banner() {
   return (
     <section className={styles.banner}>
-      <h2>Espetinho de Churrasco Melhor Preço</h2>
+      <h2 className={styles.banner__title}>Espetinho de Churrasco Melhor Preço</h2>
 
       <div className={styles.location}>
-        <FaLocationDot />
-        <p>Diadema - SP</p>
+        <FaLocationDot className={styles.location__icon} />
+        <p className={styles.location__text}>Diadema - SP</p>
       </div>
     </section>
   )

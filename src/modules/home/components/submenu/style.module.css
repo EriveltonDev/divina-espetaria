@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
-  a {
+  .submenu__link {
     text-decoration: none;
     color: white;
     font-size: 2rem;
@@ -23,7 +23,7 @@
       text-decoration: underline;
     }
 
-    svg {
+    .submenu__icon {
       color: #de822f;
     }
   }
@@ -37,7 +37,7 @@
 
 @media(width <= 675px) {
   .submenu {
-    a {
+    .submenu__link {
       font-size: 1.5rem;
       padding: 20px 0;
     }
